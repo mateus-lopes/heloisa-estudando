@@ -8,11 +8,17 @@
     */
 
     //Entrada
-
+    const alunos = parseInt(prompt(`Quantos alunos vão no refeitório?`));
 
     //Processamento
+    let somaMacas = 0;
+    for (let i = 1; i <= alunos; i++) {
+        const macas = parseInt(prompt(`Quantas maçãs o aluno ${i} de ${alunos} consumiu?`));
+        somaMacas = somaMacas + macas;
+    }
 
+    const mediaMacas = somaMacas / alunos;
 
     //Saída
-
+    document.write(`Foram consumidas ${somaMacas} maçãs e a média de maçãs consumidas por aluno foi de ${mediaMacas.toFixed(1)}.`);
 </script>

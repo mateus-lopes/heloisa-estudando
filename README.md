@@ -4,12 +4,12 @@ _ANTES DE COMEÇAR A PROVA, VERIFIQUE SE VOCÊ DEVERÁ FAZER A **PROVA A** OU A 
 
 Para clonar o repositório, copie o link do repositório, que segue abaixo, para clonar usando o atalho _**Ctrl + Shift + P**_ e digitando _**"Clonar"**_. Após, cole o seguinte texto:
 ```git
-https://github.com/ldmfabio/1INFO1_estRepeticao.git
+https://github.com/ldmfabio/1INFO2_estRepeticao.git
 ```
 
 Ou, então, no terminal do VSCode, digite o seguinte comando
 ```git
-git clone https://github.com/ldmfabio/1INFO1_estRepeticao.git
+git clone https://github.com/ldmfabio/1INFO2_estRepeticao.git
 ```
 
 ## Comandos para serem executados no VSCode
@@ -37,6 +37,7 @@ git config user.email "Coloque o seu e-mail entre as aspas"
   ![Ctrl + Shift + E](ctrlshifte.png)
   - Após, inicialize o seu repositório do GitHub, colocando o nome como _**"estRepeticaoProvaA"**_ ou _**"estRepeticaoProvaB"**_.
   - Para voltar aos arquivos, clique na primeira opção da barra de atividades, ou, então, pressione as teclas **_Ctrl + Shift + E_**.
+- Para qualquer dúvida sobre as funções utilizando Arrays/Listas, acesse o arquivo de [Glossário do JS](JS_glossary.pdf).
 
 ### Enviar arquivos para o repositório do GitHub
 

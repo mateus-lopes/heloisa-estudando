@@ -7,11 +7,16 @@
     */
 
     //Entrada
-
+    const alunos = parseInt(prompt(`Quantos alunos vão na cantina para pegar bolacha?`));
 
     //Processamento
-
+    let totalBolachas = 0;
+    for (let i = 1; i <= alunos; i++) {
+        const bolacha = parseInt(prompt(`Quantas bolachas o aluno ${i} de ${alunos} comeu?`));
+        totalBolachas = totalBolachas + bolacha;
+    }
+    const mediaBolachaPorAluno = totalBolachas / alunos;
 
     //Saída
-
+    document.write(`Foram consumidas ${totalBolachas} bolachas e a média de bolacha por aluno é de ${mediaBolachaPorAluno.toFixed(1)}.`);
 </script>

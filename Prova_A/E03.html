@@ -7,11 +7,20 @@
     */
 
     //Entrada
-
+    const quantNotas = parseInt(prompt(`Informe quantas notas serão lançadas para o aluno:`));
 
     //Processamento
-
+    let somaNotas = 0;
+    for (let i = 1; i <= quantNotas; i++) {
+        somaNotas += Number(prompt(`Qual a nota ${i} de ${quantNotas} do aluno?`));
+    }
+    const media = somaNotas / quantNotas;
 
     //Saída
-
+    if (media < 6) {
+        document.write(`O aluno foi reprovado - Média ${media.toFixed(2)}!`);
+    }
+    else {
+        document.write(`O aluno foi aprovado - Média ${media.toFixed(2)}!`);
+    }
 </script>

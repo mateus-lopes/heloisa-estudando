@@ -6,11 +6,22 @@
     */
 
     //Entrada
-
+    const porquinhos = 15;
 
     //Processamento
+    let porquinhosMachos = 0;
+    let porquinhosFemeas = 0;
 
+    for (let i = 1; i <= porquinhos; i++) {
+        const genero = prompt(`Qual o gênero do porquinho ${i} de ${porquinhos}? (F-Fêmea | M-Macho)`).toUpperCase();
+        if (genero === "F") {
+            porquinhosFemeas++;
+        }
+        else {
+            porquinhosMachos++;
+        }
+    }
 
     //Saída
-
+    document.write(`Há na fazenda ${porquinhosFemeas} fêmeas e ${porquinhosMachos} machos de porquinhos.`);
 </script>

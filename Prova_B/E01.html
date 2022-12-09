@@ -7,11 +7,23 @@
     */
 
     //Entrada
-
+    const notas = parseInt(prompt(`Qual a quantidade de avaliações que realizou o aluno João?`));
 
     //Processamento
+    let somaNotasJoao = 0;
 
+    for (let i = 1; i <= notas; i++) {
+        const nota = Number(prompt(`Qual a nota ${i} de ${notas} do João?`));
+        somaNotasJoao = somaNotasJoao + nota;
+    }
+
+    const media = somaNotasJoao / notas;
 
     //Saída
-
+    if (media >= 7) {
+        document.write(`O João foi APROVADO com a média final de ${media.toFixed(1)}.`);
+    }
+    else {
+        document.write(`O João foi REPROVADO com a média final de ${media.toFixed(1)}.`);
+    }
 </script>
