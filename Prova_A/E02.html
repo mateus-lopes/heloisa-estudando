@@ -6,19 +6,47 @@
     Pergunte, para cada aluno, quantas maçãs o aluno comeu.
     Apresente, no final do programa, o total de maçãs consumidas. Também apresente a média de maçãs consumidas por aluno.
     */
+    const qrefi = Number(prompt("quantos alunos foram no refeitoro? "));
 
-    //Entrada
-    const alunos = parseInt(prompt(`Quantos alunos vão no refeitório?`));
-
-    //Processamento
-    let somaMacas = 0;
-    for (let i = 1; i <= alunos; i++) {
-        const macas = parseInt(prompt(`Quantas maçãs o aluno ${i} de ${alunos} consumiu?`));
-        somaMacas = somaMacas + macas;
+    let maca = 0;
+    for (let aluno = 0; aluno < qrefi; aluno++) {
+        const qmaca = Number(prompt("quantos maças vc comeu? "));
+        maca = maca + qmaca
     }
+    let media = maca / qrefi
 
-    const mediaMacas = somaMacas / alunos;
+    document.write(`total de maças consumidas: ${maca}, media ${media} `);
 
-    //Saída
-    document.write(`Foram consumidas ${somaMacas} maçãs e a média de maçãs consumidas por aluno foi de ${mediaMacas.toFixed(1)}.`);
 </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

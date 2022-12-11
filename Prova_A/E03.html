@@ -1,26 +1,25 @@
 <script>
     //Problema: Lançar notas
     /*
-    Peça para o Professor informar quantas notas serão lançadas para o aluno. Após, usando estrutura de repetição, peça para o Professor informar todas as notas.
+    Peça para o Professor informar quantas notas serão lançadas para o aluno. Após, usando estrutura de repetição, peça para o Professor informar 
+    todas as notas.
     Verifique a média aritmética do aluno, considerando os dados que foram informados.
     Apresente se o aluno foi aprovado ou não, considerando que para ser aprovado deverá ter atingido média aritmética maior ou igual a 6.
     */
 
-    //Entrada
-    const quantNotas = parseInt(prompt(`Informe quantas notas serão lançadas para o aluno:`));
+    const qnotas = Number(prompt("quantas notas serão lançadas?"))
 
-    //Processamento
-    let somaNotas = 0;
-    for (let i = 1; i <= quantNotas; i++) {
-        somaNotas += Number(prompt(`Qual a nota ${i} de ${quantNotas} do aluno?`));
+    let notas = 0;
+    for (let prova = 1; prova <= qnotas; prova++) {
+        const nota = Number(prompt(`qual a ${prova}º?`));
+        notas = notas + nota
     }
-    const media = somaNotas / quantNotas;
+    let media = notas / qnotas
+        if (media >= 6) { 
+            alert("Aprovado!") 
+        } 
+        else { 
+            alert("Reprovado, se esforce mais ano q vem!") 
+        }
 
-    //Saída
-    if (media < 6) {
-        document.write(`O aluno foi reprovado - Média ${media.toFixed(2)}!`);
-    }
-    else {
-        document.write(`O aluno foi aprovado - Média ${media.toFixed(2)}!`);
-    }
 </script>

@@ -4,24 +4,24 @@
     Imagine que você está carregando malas em um carro.
     Faça um programa que pergunte quantas malas serão colocadas no veículo.
     Para cada mala que for colocada, pergunte qual o peso dessa mala.
-    Ao final do programa, apresente o peso total a ser transportado e considere que, se o peso total transportado for até 150 Kg, a viagem pode ser realizada. Caso ultrapasse esse peso, apresente que a viagem não poderá ser realizada e também apresente quantos Kgs deverão ser retirados do porta-malas.
+    Ao final do programa, apresente o peso total a ser transportado e considere que, se o peso total transportado for até 150 Kg, a viagem pode 
+    ser realizada. Caso ultrapasse esse peso, apresente que a viagem não poderá ser realizada e também apresente quantos Kgs deverão ser retirados
+     do porta-malas.
     */
 
-    //Entrada
-    const malas = parseInt(prompt(`Quantas malas serão colocadas no veículo?`));
-
-    //Processamento
-    let pesoTotal = 0;
-    for (i = 1; i <= malas; i++) {
-        const peso = Number(prompt(`Informe o peso da mala ${i} de ${malas}:`));
-        pesoTotal+= peso; //É a mesma coisa que se fosse fazer pesoTotal = pesoTotal + peso;
-    }
+    const qmalas =  Number(prompt("Quantas malas deseja levar? "));
     
-    //Saída
-    if (pesoTotal <= 150) {
-        document.write(`A viagem poderá ser realizada! Peso total é de ${pesoTotal} Kgs e o limite é 150 Kgs.`);
+    let pesoagr = 0;
+    for (let peso = 1; peso <= qmalas; peso++) {
+        const pesa = Number(prompt(`Quanto a ${peso} pesa? `));
+        pesoagr = pesoagr + pesa
     }
-    else {
-        document.write(`A viagem não poderá ser realizada! Peso total é de ${pesoTotal} Kgs e o limite é 150 Kgs. Você precisa retirar ${(pesoTotal - 150).toFixed(1)} Kgs para poder seguir viagem. `);
+    let tira = pesoagr - 150
+
+    if (pesoagr <= 150) {
+        alert("A viagem pode ser realizada!")
+    } else {
+        alert(`A viagem n pode ser realizada!, vc preciza retirar ${tira}kg`)
     }
+
 </script>
